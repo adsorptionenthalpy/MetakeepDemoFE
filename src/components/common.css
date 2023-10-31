@@ -4,29 +4,69 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   color: black;
+  background-image: url('../assets/background.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #66ff00;
+}
+
+.form-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  color: black;
+  background-image: url('../assets/background.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #66ff00;
+  top: 100px;
+  width: 500px;
 }
 
 h2 {
   margin-bottom: 20px;
+  color: #22a2ff;
+}
+
+.infobox {
+  margin: 20px;
+  background-image: url('../assets/group-1@2x.png');
+  width: 400px;
+  height: 400px;
+  left: 800px;
+  right: 800px;
+  top: 200px;
+  bottom: 200px;
+
 }
 
 .email-input {
   margin-bottom: 10px;
   padding: 10px;
   width: 300px;
+  background-color: #22a2ff;
+  color: white;;
+
 }
 
 .register-button {
   padding: 10px 20px;
-  background-color: black;
+  background-color: #22a2ff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: black;
+  opacity: .8;
 }
 
 .custom-spinner .ant-spin-dot-item {
-  background-color: black;
+  background-color: rgb(0, 255, 106);
 }

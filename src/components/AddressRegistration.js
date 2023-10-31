@@ -92,6 +92,7 @@ const AddressRegistration = () => {
   };
 
   return (
+
     <div className="form-container">
       <h2>FIO Address Registration</h2>
       <input
@@ -109,7 +110,9 @@ const AddressRegistration = () => {
           {"Register"}
         </button>
       )}
+
     </div>
+
   );
 };
 

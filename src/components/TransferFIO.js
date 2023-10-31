@@ -125,24 +125,25 @@ const TransferFIO = () => {
   return (
     <div className="form-container">
       <h2>Transfer FIO token</h2>
+      Enter email
       <input
         type="email"
         value={senderEmail}
         onChange={handleSenderEmailChange}
-        placeholder="Enter sender's email"
+        placeholder="email address"
         className="email-input"
         disabled={loading}
       />
-      <h3> Sender FIO public key: {senderFioPubKey}</h3>
+      Enter recipient email
       <input
         type="email"
         value={receiverEmail}
         onChange={handleReceiverEmailChange}
-        placeholder="Enter receiver's email"
+        placeholder="recipient email"
         className="email-input"
         disabled={loading}
       />
-      <h3> Receiver FIO public key: {receiverFioPubKey}</h3>
+      Input amount
       <input
         type="number"
         value={amount}
@@ -151,6 +152,8 @@ const TransferFIO = () => {
         className="email-input"
         disabled={loading}
       />
+            Receiver FIO public key: {receiverFioPubKey}<br />
+            Sender FIO public key: {senderFioPubKey}<br /><br />
       {loading ? (
         <Spin size="large" className="custom-spinner" />
       ) : (

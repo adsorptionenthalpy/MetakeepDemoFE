@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import { PlusOutlined, SwapOutlined } from "@ant-design/icons";
 import AddressRegistration from "./components/AddressRegistration";
+import DomainRegistration from "./components/RegisterDomain";
 import TransferFIO from "./components/TransferFIO";
 
 const menuStyle = {
@@ -42,7 +43,7 @@ function App() {
             style={menuStyle}
             selectedKeys={[]}
           >
-            <h1 style={logoStyle}>MetaKeep FIO Tutorial</h1>
+            <h1 style={logoStyle}>MetaKeep FIO Demonstration</h1>
             <Menu.Item key="addressRegistration" icon={<PlusOutlined />}>
               <Link
                 to="/addressRegistration"
@@ -50,6 +51,15 @@ function App() {
                 activestyle={activeLinkStyle}
               >
                 Address Registration
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="domainRegistration" icon={<PlusOutlined />}>
+              <Link
+                to="/domainRegistration"
+                style={linkStyle}
+                activestyle={activeLinkStyle}
+              >
+                Domain Registration
               </Link>
             </Menu.Item>
             <Menu.Item key="transfer" icon={<SwapOutlined />}>
@@ -67,6 +77,10 @@ function App() {
             <Route
               path="/addressRegistration"
               element={<AddressRegistration />}
+            />
+             <Route
+              path="/domainRegistration"
+              element={<DomainRegistration />}
             />
             <Route path="/transfer" element={<TransferFIO />} />
           </Routes>

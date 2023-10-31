@@ -125,32 +125,18 @@ const RegisterDomain = () => {
   return (
     <div className="form-container">
       <h2>Register FIO Domain</h2>
+      
       <input
         type="email"
         value={senderEmail}
         onChange={handleSenderEmailChange}
-        placeholder="Enter sender's email"
+        placeholder="sender email"
         className="email-input"
         disabled={loading}
       />
-      <h3> Sender FIO public key: {senderFioPubKey}</h3>
-      <input
-        type="email"
-        value={receiverEmail}
-        onChange={handleReceiverEmailChange}
-        placeholder="Enter receiver's email"
-        className="email-input"
-        disabled={loading}
-      />
-      <h3> Receiver FIO public key: {receiverFioPubKey}</h3>
-      <input
-        type="number"
-        value={amount}
-        onChange={handleAmountChange}
-        placeholder="Enter amount"
-        className="email-input"
-        disabled={loading}
-      />
+
+         FIO public key: {senderFioPubKey}<br />
+
       {loading ? (
         <Spin size="large" className="custom-spinner" />
       ) : (
